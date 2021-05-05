@@ -1,0 +1,15 @@
+set title "Crecimiento poblacional Antigua Guatemala"
+set xlabel "Año"
+set ylabel "Poblacion [mil habitantes]"
+set xrange [2000:2025]
+set yrange[0:300]
+set grid
+set key top left box
+set key font "Arial,10"
+set tics font "Arial,9"
+set xlabel font "Arial,9"
+set ylabel font "Arial,9"
+set title font "Arial,9"
+set tics nomirror
+set border 3
+plot "datos.txt" w p pt 7 ps 1 , 12.0405*x-24046.8730 lw 1 lt 4 
