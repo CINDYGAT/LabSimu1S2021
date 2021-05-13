@@ -1,0 +1,15 @@
+set title "Cohete 2"
+set xlabel "t[s]"
+set ylabel "y[m]"
+set xrange [0:200]
+set yrange[0:165000]
+set grid
+set key top left box
+set key font "Arial,10"
+set tics font "Arial,9"
+set xlabel font "Arial,9"
+set ylabel font "Arial,9"
+set title font "Arial,9"
+set tics nomirror
+set border 3
+plot "cohete2.txt" using 1:2 w p pt 7 ps 1 
